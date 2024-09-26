@@ -8,39 +8,74 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="50sp"
-        android:id="@+id/text1"
         android:layout_gravity="center"
         android:text="0"
-         />
+        android:textSize="50sp" />
+
     <ImageView
         android:id="@+id/emojy"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/em"/>
+        android:src="@drawable/em" />
+    <RadioGroup
+        android:layout_width="300dp"
+        android:layout_marginTop="360dp"
+        android:layout_height="100dp">
+
+        <RadioButton
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+
+            android:id="@+id/radioe"
+            android:textSize="20dp"
+            android:text="easy" />
+
+        <RadioButton
+            android:id="@+id/radioa"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:textSize="20dp"
+            android:text="avarage" />
+        <RadioButton
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:id="@+id/radiod"
+            android:textSize="20dp"
+            android:text="difficult"/>
+    </RadioGroup>
+
+
+
+
+
+
     <LinearLayout
         android:layout_width="400dp"
-        android:orientation="horizontal"
-        android:layout_marginTop="450dp"
-        android:layout_height="100dp">
+        android:layout_height="100dp"
+
+        android:orientation="horizontal">
+
         <Button
             android:layout_width="200dp"
             android:layout_height="100dp"
             android:onClick="startp"
             android:text="start"
-            android:textSize="20dp"/>
+            android:textSize="20dp" />
+
         <Button
             android:layout_width="200dp"
             android:layout_height="100dp"
-            android:text="stop"
             android:onClick="stopp"
-            android:textSize="20dp"/>
-
+            android:id="@+id/stop"
+            android:text="stop"
+            android:textSize="20dp" />
 
 
     </LinearLayout>
+
 
 
 
